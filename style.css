@@ -1,0 +1,271 @@
+#boda{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.header h1 {
+    margin: 0;
+ 
+}
+.btn-container {
+    display: flex; /* Utilisation de Flexbox pour les boutons */
+    justify-content: flex-end; /* Aligner les boutons à droite */
+    align-items: center; /* Centrer les éléments verticalement */
+    gap: 20px; /* Espacement entre les boutons */
+}
+.login-btn, .logout-btn {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Largeur auto pour les boutons */
+    height: auto;
+}
+.logout-btn   { background-color:  #e60000;} 
+.login-btn    {background-color: #28a745;}
+.logout-btn:hover {
+    transform: scale(1.1); /* Augmente la taille du bouton de 10% */
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+.login-btn:hover {
+    transform: scale(1.1); /* Augmente la taille du bouton de 10% */
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.826); /* Bordure générale */
+
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000000; /* Bordure générale autour des cellules */
+}
+
+.table th{
+    color: #ffffff; /* Texte blanc pour l'en-tête */
+    font-weight: bold; /* Mettre le texte en gras pour l'en-tête */
+}
+.table-red th {
+    background-color:  #e60000;
+    color: white;
+}
+
+.table-green th {
+    background-color: #4CAF50;
+    color: white;
+}
+tbody{
+    background-color: #e6e5e5cd; /* Fond clair pour le corps du tableau */
+}
+.btn-reponse {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+#bore {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+  
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: row; /* Disposition sur la même ligne */
+    justify-content: space-between; /* Espacement entre le titre et les boutons */
+    align-items: center; /* Alignement vertical des éléments */
+    background-color: #066fe0; /* Fond bleu */
+    color: white; /* Texte blanc */
+    padding: 20px 20px; /* Espacement autour du contenu */
+    margin-bottom: 20px; /* Espacement en bas */
+    position:fixed;
+    width: 98%;
+    height:60px; /* Hauteur fixe */
+    min-height:60px; /* Hauteur minimale pour éviter que le contenu dépasse */
+}
+
+.header h2 {
+    color: #333;
+}
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes */
+    gap: 20px; /* Espacement entre les éléments */
+    margin: 20px auto;
+    width: 90%; /* Largeur du formulaire */
+}
+#lieu{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.form-row {
+    display: flex;
+ 
+    flex-direction:column;
+}
+
+label  {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.in, .sel, .tex {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #2222220f;
+}
+
+.tex {
+    grid-column: span 2;
+
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+#envoye{
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 35px;
+}
+#annule{
+    background-color: #2767fa;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:35px;
+}
+.status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-nouveau {
+    background-color: red;
+}
+
+.status-repondu {
+    background-color: green;
+}
+.message{
+    background-color: #28a745;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    font-size:x-large;
+    text-align: center; /* Centre le texte horizontalement */
+    vertical-align: middle; /* Centre le texte verticalement (utile dans certains cas) */
+    display: flex;
+    justify-content: center; /* Centre horizontalement dans un conteneur flex */
+    align-items: center; 
+    width: 80%;
+    height:80px;
+    border-radius: 10px;
+}
+.theadnoi {
+    background-color: #000000; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte */
+}
+.theadnoi th {
+    padding: 10px;
+    text-align: center;
+    border-right: 2px solid #ccc; /* Ajout de la séparation entre les colonnes */
+}
+.header h6 {
+    font-size: 2rem; /* Taille du titre ajustée */
+    color: rgba(255, 255, 255, 0.933); /* Couleur du titre */
+    margin: 0; /* Enlever les marges */
+    text-align: left; /* Aligner le titre à gauche */
+}
+
+.header p {
+    font-size: 1.2rem; /* Taille du texte du paragraphe */
+    color: #ffffff; /* Couleur du texte */
+    text-align: left; /* Aligner le texte à gauche */
+    line-height: 1.6; /* Espacement entre les lignes pour le texte */
+    margin: 0; /* Enlever les marges */
+}
+section{
+    margin-top:80px; /* Enlever les marges */
+}
+.selec{
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Largeur auto pour les boutons */
+    height: auto;
+    background-color: aliceblue;
+}
